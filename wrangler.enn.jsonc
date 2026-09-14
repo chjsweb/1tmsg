@@ -22,7 +22,7 @@
 
   // 自定义域名（默认关闭，只走 *.workers.dev）。域名需已托管在 Cloudflare；
   // 启用后证书与 DNS 记录会自动创建，不要再手动为它建 A/CNAME 记录。
-  // "routes": [{ "pattern": "1tmsg.example.com", "custom_domain": true }],
+  "routes": [{ "pattern": "1tmsg.chjsweb.dpdns.org", "custom_domain": true }],
 
   // 启用上面的 routes 后本项会被默认关闭；只想走自定义域名就删掉这一行
   "workers_dev": true,
