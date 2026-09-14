@@ -39,7 +39,7 @@
   //   npx wrangler r2 bucket create 1tmsg-blobs
   //   npx wrangler r2 bucket lifecycle add 1tmsg-blobs expire-old --expire-days 7
   //   （第二条是 7 天清理兜底；正常清理由 Durable Object Alarm 完成）
-  // "r2_buckets": [{ "binding": "BLOBS", "bucket_name": "1tmsg-blobs" }],
+  "r2_buckets": [{ "binding": "BLOBS", "bucket_name": "1tmsg-blobs" }],
 
   "vars": {
     // 站点默认语言："zh" | "en"。构建期据此生成 src/i18n/active.ts 与页面文案，
