@@ -19,6 +19,13 @@ export const en: Record<MsgKey, string> = {
   'lang.toEnglish': 'Switch to English',
   'lang.toChinese': '切换到中文',
   'nav.github': 'View the source on GitHub',
+  /* Footer. The first two are the **built-in** lawful-use notice (no longer a
+     deployer setting — it's part of the site itself; deployers only set
+     vars.ABUSE_CONTACT, see src/client/footer.ts). reportHint is only shown when
+     a report contact is configured, otherwise "the address below" would dangle */
+  'foot.notice': 'Lawful use only. No illegal activity or unlawful content.',
+  'foot.reportHint': 'If you find abusive content, send the link to the contact below.',
+  'foot.report': 'Report abuse',
 
   /* ---------------- 创建页 · 页头与说明 ---------------- */
 
@@ -77,6 +84,9 @@ export const en: Record<MsgKey, string> = {
   'create.viewsInc': 'Increase',
   'create.ttlLabel': 'Expires in',
   'create.ttlSide': '7 days max',
+  'ttl.m3': '3 minutes',
+  'ttl.m15': '15 minutes',
+  'ttl.m30': '30 minutes',
   'ttl.h1': '1 hour',
   'ttl.h6': '6 hours',
   'ttl.h12': '12 hours',
@@ -263,6 +273,7 @@ export const en: Record<MsgKey, string> = {
   'err.images_disabled': 'This deployment does not have images enabled',
   'err.incomplete': 'Some images have not finished uploading',
   'err.rate_limited': 'Too many messages created — try again in {n} seconds||Too many messages created — try again in {n} seconds',
+  'err.storage_capacity_reached': 'This service has run out of storage capacity, so images cannot be sent right now. Send text only, or try again later',
   'err.id_collision': 'The service is temporarily unavailable. Try again.',
   'err.method_not_allowed': 'That request method is not allowed',
   'err.length_required': 'The request is missing its length',

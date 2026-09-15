@@ -32,6 +32,12 @@ export const zh = {
   'lang.toEnglish': '切换到英文',
   'lang.toChinese': '切换到中文',
   'nav.github': '在 GitHub 上查看源码',
+  /* 页脚。前两条是**内置**的用途告知（不再做成部署配置 —— 它是站点的固定组成部分，
+     部署者只配 vars.ABUSE_CONTACT，见 src/client/footer.ts）；
+     reportHint 只在配了举报联系方式时才显示，否则「下方方式」会落空 */
+  'foot.notice': '本服务仅限合法用途，禁止用于违法活动或传播违法信息。',
+  'foot.reportHint': '发现违规内容，请将相关链接发送到下方方式举报。',
+  'foot.report': '举报滥用',
 
   /* ---------------- 创建页 · 页头与说明 ---------------- */
 
@@ -90,6 +96,9 @@ export const zh = {
   'create.viewsInc': '增加',
   'create.ttlLabel': '过期时间',
   'create.ttlSide': '最长 7 天',
+  'ttl.m3': '3 分钟',
+  'ttl.m15': '15 分钟',
+  'ttl.m30': '30 分钟',
   'ttl.h1': '1 小时',
   'ttl.h6': '6 小时',
   'ttl.h12': '12 小时',
@@ -261,6 +270,7 @@ export const zh = {
   'err.images_disabled': '本服务未启用图片功能',
   'err.incomplete': '还有图片没有上传完成',
   'err.rate_limited': '创建太频繁了，请 {n} 秒后再试',
+  'err.storage_capacity_reached': '服务存储容量已满，暂时无法发送图片。可以去掉图片只发文字，或稍后再试',
   'err.id_collision': '服务暂时不可用，请重试',
   'err.method_not_allowed': '请求方法不被允许',
   'err.length_required': '请求缺少长度信息',
